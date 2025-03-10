@@ -1,0 +1,6 @@
+.cartWidget{
+    display: flex;
+    text-align: center;
+    height: 1.7rem;
+    width: 1.7rem;
+}

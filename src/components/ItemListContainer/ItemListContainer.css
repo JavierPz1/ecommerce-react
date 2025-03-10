@@ -1,0 +1,10 @@
+.containerProducts{
+    height: 100%;
+    display: block;
+    justify-content: center;
+}
+.productsCard{
+    color: rgba(255, 255, 255);
+    background-color: #242424;
+    text-align: center;
+}

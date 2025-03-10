@@ -1,3 +1,5 @@
+import CartWidget from '../CartWidget/CartWidget'
+import Logo from '../Logo/Logo'
 import './Navbar.css'
 
 function Navbar() {
@@ -6,11 +8,11 @@ function Navbar() {
     <>
       <header>
         <ul className='nav-bar'>
-          <li className='item-nav-bar'>LOGO</li>
+          <Logo/>
           <li className='item-nav-bar'>Inicio</li>
           <li className='item-nav-bar'>Productos</li>
           <li className='item-nav-bar'>Contacto</li>
-          <li className='item-nav-bar'>Carrito</li>
+          <CartWidget/>
         </ul>
       </header>
     </>

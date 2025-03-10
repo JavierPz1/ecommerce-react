@@ -1,11 +1,13 @@
 import './App.css'
-import Navbar from './components/Header/Navbar'
+import Navbar from './components/Navbar/Navbar'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 
 function App() {
 
   return (
     <>
-      <Navbar/>
+      <Navbar />
+      <ItemListContainer greetings="Hola mundo!!" />
     </>
   )
 }
