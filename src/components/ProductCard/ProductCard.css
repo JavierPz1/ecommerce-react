@@ -1,0 +1,19 @@
+.productCard{
+    width: 20rem;
+    margin: 1rem;
+    color: rgb(255, 255, 255);
+    background-color: rgba(75, 75, 75, 0.75);
+    text-align: start;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 25px #000;
+}
+.buttonCard{
+    display: inline-flex;
+    margin-inline: 0.5rem;
+    padding: 0.3rem;
+    background-color: rgb(255, 255, 0);
+}
+.list-group-item{
+    background-color: rgba(65, 65, 65, 0.75);
+    color: white;
+}

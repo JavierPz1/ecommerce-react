@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    max-width: 1280px;
+    width: 100%;
+    color: rgba(255, 255, 255);
+    background-color: #242424;
+}
+header{
+    max-width: 1280px;
+    min-width: 390px;
+}

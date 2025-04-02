@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import CartWidget from '../CartWidget/CartWidget'
 import Logo from '../Logo/Logo'
 import './Navbar.css'
@@ -8,11 +9,23 @@ function Navbar() {
     <>
       <header>
         <ul className='nav-bar'>
-          <Logo/>
-          <li className='item-nav-bar'>Inicio</li>
-          <li className='item-nav-bar'>Productos</li>
-          <li className='item-nav-bar'>Contacto</li>
-          <CartWidget/>
+          <Logo />
+
+          <Link to={"/"} className='link'>
+            <li className='item-nav-bar'>Inicio</li>
+          </Link>
+
+          <Link to={"/categoria/smartwatch"} className='link'>
+          <li className='item-nav-bar'>Smartwatch</li>
+          </Link>
+
+          <Link to={"/categoria/auriculares"} className='link'>
+          <li className='item-nav-bar'>Auriculares</li>
+          </Link>
+          
+          <Link to={"/carrito"} className='link'>
+          <CartWidget />
+          </Link>
         </ul>
       </header>
     </>
