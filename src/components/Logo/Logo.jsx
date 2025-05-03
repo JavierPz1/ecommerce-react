@@ -1,4 +1,4 @@
-import './Logo.css'
+import './Logo.css';
 
 function Logo() {
 
@@ -9,4 +9,4 @@ function Logo() {
     )
 }
 
-export default Logo
+export default Logo;

@@ -1,7 +1,7 @@
-import { Link } from 'react-router'
-import CartWidget from '../CartWidget/CartWidget'
-import Logo from '../Logo/Logo'
-import './Navbar.css'
+import { Link } from 'react-router';
+import CartWidget from '../CartWidget/CartWidget';
+import Logo from '../Logo/Logo';
+import './Navbar.css';
 
 function Navbar() {
 
@@ -32,4 +32,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Navbar;

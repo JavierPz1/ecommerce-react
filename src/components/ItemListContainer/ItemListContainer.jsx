@@ -1,30 +1,32 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import { fetchData } from '../../fetchData';
+import { collection, getDocs } from 'firebase/firestore';
+import { db } from '../../firebaseConfig';
 import ProductCard from '../ProductCard/ProductCard';
-import './ItemListContainer.css';
 import Loader from '../Loader/Loader';
+import './ItemListContainer.css';
 
 function ItemListContainer() {
 
     const [loading, setLoading] = useState(true);
-    const [allProducts, fetchAllProducts] = useState(null);
+    const [allProducts, setAllProducts] = useState(null);
     const { categoria } = useParams();
 
+    const collectionProduct = collection(db, "productos");
+
+    
     
     useEffect(() => {
+
+        getDocs(collectionProduct).then(snapshot => {
+            let arrayProducts = snapshot.docs.map(el => el.data());
+            setAllProducts(arrayProducts);
+
+        }).catch(err => console.error(err));
+        
         setTimeout(() => {
             setLoading(false);
         }, 2000);
-        
-        if (!allProducts) {          
-            fetchData()
-            .then(response => {
-                fetchAllProducts(response)
-                console.log(response)
-            })
-            .catch(err => console.error(err));
-        }
         
     }, [categoria]);
     
