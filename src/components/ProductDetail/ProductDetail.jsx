@@ -4,7 +4,7 @@ import { useAppContext } from '../../context/context';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../../firebaseConfig';
 import Loader from '../Loader/Loader';
-import Count from '../Count/count';
+import Count from '../Count/Count';
 import './ProductDetail.css';
 
 
