@@ -1,12 +1,42 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Ecommerce de React
 
-Currently, two official plugins are available:
+Es un proyecto SPA(Single Page Application) de React hecho con Vite y con un deploy en Netlify.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Se trata de un Ecommerce de productos smartwatch inteligentes y auriculares bluetooth.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Instalación
+Descarga el proyecto y instalar en la terminal con npm para las dependencias y para visualizar el proyecto en http://localhost:5173/
+
+```bash
+  npm install
+  npm run dev
+```
+    
+### Deploy
+
+Para ver el proyecto en cuestion a traves de Netlify seguir el enlace:
+[Ecommerce-React-JP](https://ecommerce-react-jp.netlify.app/)
+
+
+
+### Componentes
+
+- Logo
+- Navbar (barra de navegacion)
+- ItemListContainer (donde se van a renderizar todos los productos)
+- ProductCard (es la estructura visual de cada producto)
+- ProductDetail (una visual mas amplia de un solo producto donde se podra agregar mas de una unidad con el componente Count)
+- Count (es el contador de productos a agregar)
+- Loader (pantalla de carga)
+- CartWidget (el icono del carrito)
+- Carrito (para renderizar los productos agregador al carrito de compras)
+
+#### Context
+
+- En la carpeta Context se encuentra la el array del carrito y la funcion para agregar los productos al mismo.
+### Autor
+
+- [@Javier Perez](https://www.github.com/JavierPz1)
+

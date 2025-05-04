@@ -31,22 +31,22 @@ function Carrito() {
                     {
                         carrito.map(el => {
                             return (
-                                
-                                    <div className="card productCard" key={el.id}>
 
-                                        <p>img</p>
-                                        <div className="card-body">
-                                            <h1 className="card-title">{el.nombre}</h1>
-                                            <p className="card-text">{el.categoria}</p>
-                                        </div>
-                                        <ul className="list-group list-group-flush">
-                                            <li className="list-group-item">Color: {el.color}</li>
-                                            <li className="list-group-item">Cantidad: {el.cantidad}</li>
-                                        </ul>
-                                        <p className="m-3">Precio por unidad: ${el.precio}</p>
-                                        <h4 className="m-3">Subtotal: <span>${el.precio * el.cantidad}</span></h4>
+                                <div className="card productCard" key={el.id}>
+
+                                    <img src={el.img} alt="" className="imgProduct" />
+                                    <div className="card-body">
+                                        <h1 className="card-title">{el.nombre}</h1>
+                                        <p className="card-text">{el.categoria}</p>
                                     </div>
-                                
+                                    <ul className="list-group list-group-flush">
+                                        <li className="list-group-item">Color: {el.color}</li>
+                                        <li className="list-group-item">Cantidad: {el.cantidad}</li>
+                                    </ul>
+                                    <p className="m-3">Precio por unidad: ${el.precio}</p>
+                                    <h4 className="m-3">Subtotal: <span>${el.precio * el.cantidad}</span></h4>
+                                </div>
+
                             );
                         })
                     }

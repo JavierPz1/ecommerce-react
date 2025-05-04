@@ -55,7 +55,7 @@ function ProductDetail() {
                 {
                     product ?
                         <>
-                            <p>img</p>
+                            <img src={product.img} alt="" className="imgProduct" />
                             <div className="card-body">
                                 <h1 className="card-title">{product.nombre}</h1>
                                 <p className="card-text">{product.categoria}</p>

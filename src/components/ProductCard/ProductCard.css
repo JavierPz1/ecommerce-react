@@ -22,3 +22,9 @@
     background-color: rgba(65, 65, 65, 0.75);
     color: white;
 }
+.imgProduct{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom: solid;
+    border-color: yellow;
+}
